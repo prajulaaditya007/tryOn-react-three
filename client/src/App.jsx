@@ -1,7 +1,14 @@
+import Canvas from './canvas';
+import React from 'react';
+import Customizer from "./pages/Customizer.jsx";
+import Home from "./pages/Home.jsx";
+
 export default function App() {
-  return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    return (
+        <main className="app transition-all ease-in">
+            <Home/>
+            <Canvas/>
+            <Customizer/>
+        </main>
+    )
 }
