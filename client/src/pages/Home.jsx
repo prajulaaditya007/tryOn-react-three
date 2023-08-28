@@ -1,5 +1,5 @@
-import {motion, AnimatePresence} from 'framer-motion'
-import {useSnapshot} from "valtio";
+import { motion, AnimatePresence } from 'framer-motion'
+import { useSnapshot } from "valtio";
 import {
     headContainerAnimation,
     headContentAnimation,
@@ -8,7 +8,7 @@ import {
 } from '../config/motion'
 
 import state from '../store'
-import {CustomButton} from "../components";
+import { CustomButton } from "../components";
 
 const Home = () => {
     const snap = useSnapshot(state)
@@ -28,7 +28,7 @@ const Home = () => {
                     <motion.div className='head-content' {...headContainerAnimation}>
                         <motion.div {...headTextAnimation}>
                             <h1 className='head-text'>
-                                LET'S <br className='xl:block hidden'/> DO IT
+                                LET'S <br className='xl:block hidden' /> DO IT
                             </h1>
                         </motion.div>
                         <motion.div {...headContentAnimation} className='flex flex-col gap-5'>
